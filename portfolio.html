@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jen C. Fulgencio | Interactive Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    /* Active navbar button */
+    .active-btn { color: #f472b6 !important; font-weight: 600; }
+  </style>
+</head>
+
+<body class="bg-sky-50 text-gray-800">
+
+<!-- NAVIGATION -->
+<header class="bg-white shadow fixed w-full z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="font-bold text-sky-500">Jen Fulgencio</h1>
+    <nav class="space-x-6 text-sm font-medium">
+      <button onclick="showSection('about', this)" class="hover:text-pink-400 transition-colors duration-300">About</button>
+      <button onclick="showSection('skills', this)" class="hover:text-pink-400 transition-colors duration-300">Skills</button>
+      <button onclick="showSection('projects', this)" class="hover:text-pink-400 transition-colors duration-300">Projects</button>
+      <button onclick="showSection('reflection', this)" class="hover:text-pink-400 transition-colors duration-300">Reflection</button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="bg-sky-400 text-white pt-32 pb-20 text-center">
+  <h1 class="text-4xl font-bold">Jen C. Fulgencio</h1>
+  <p class="mt-3 text-lg">IT Student | Aspiring Web Developer</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 max-w-4xl mx-auto px-6 hidden">
+  <h2 class="text-3xl font-bold text-sky-500 mb-8">About Me</h2>
+  <div class="md:flex md:items-center md:space-x-8 bg-white shadow-lg rounded-xl p-6 hover:shadow-2xl transition-shadow duration-300">
+    <img src="image.png" alt="Jen C. Fulgencio" class="w-48 h-48 rounded-full object-cover shadow-lg hover:scale-105 transition-transform duration-300">
+    <div class="mt-4 md:mt-0">
+      <p>
+        I am Jen C. Fulgencio, an IT student passionate about web development and system design.
+        I enjoy creating clean, user-friendly interfaces and learning new technologies to improve my skills.
+      </p>
+      <p class="mt-3">
+        My goal is to become a proficient web developer and contribute to innovative IT projects in the future.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 max-w-4xl mx-auto px-6 hidden">
+  <h2 class="text-3xl font-bold text-sky-500 mb-6">Skills</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-5 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <h3 class="font-semibold text-pink-400 mb-2">Frontend</h3>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Tailwind CSS</li>
+      </ul>
+    </div>
+    <div class="bg-white p-5 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <h3 class="font-semibold text-pink-400 mb-2">Backend</h3>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>SQL (Basic)</li>
+      </ul>
+    </div>
+    <div class="bg-white p-5 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <h3 class="font-semibold text-pink-400 mb-2">Tools</h3>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>VS Code</li>
+        <li>GitHub</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 max-w-4xl mx-auto px-6 hidden">
+  <h2 class="text-3xl font-bold text-sky-500 mb-6">Projects</h2>
+  <div class="space-y-6">
+    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <h3 class="font-semibold text-pink-400 mb-2">Hardware Price Management System</h3>
+      <p>A system designed to manage and update hardware prices efficiently.</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <h3 class="font-semibold text-pink-400 mb-2">Waste Management & Recycling Platform (Prototype)</h3>
+      <p>A UI/UX prototype created using Figma for a recycling-focused platform.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REFLECTION -->
+<section id="reflection" class="py-20 max-w-4xl mx-auto px-6 hidden">
+  <h2 class="text-3xl font-bold text-sky-500 mb-6">Reflection</h2>
+  <p class="mb-4">Answer the following questions:</p>
+  <div class="space-y-6">
+    <div class="bg-white p-5 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <label class="font-semibold text-pink-400">1. What technologies did you use and why?</label>
+      <textarea class="w-full mt-2 p-2 border rounded" rows="3">I used HTML, CSS, and Tailwind CSS for the frontend because they allow fast and responsive UI development. PHP and SQL were used for basic backend logic and database management. Figma was used for prototyping.</textarea>
+    </div>
+    <div class="bg-white p-5 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <label class="font-semibold text-pink-400">2. Which parts of the portfolio were easiest for you?</label>
+      <textarea class="w-full mt-2 p-2 border rounded" rows="2">The frontend development using Tailwind CSS was easiest because I am familiar with utility-first styling and responsive layouts.</textarea>
+    </div>
+    <div class="bg-white p-5 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <label class="font-semibold text-pink-400">3. Which parts were most challenging?</label>
+      <textarea class="w-full mt-2 p-2 border rounded" rows="2">Creating the prototype for the Waste Management Platform and integrating backend logic for the Hardware Price System were the most challenging due to limited experience with complex features.</textarea>
+    </div>
+    <div class="bg-white p-5 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <label class="font-semibold text-pink-400">4. What technologies are you most interested in learning?</label>
+      <textarea class="w-full mt-2 p-2 border rounded" rows="2">I am interested in learning React.js for modern frontend development, Node.js for backend, and advanced database management with MySQL or MongoDB.</textarea>
+    </div>
+    <div class="bg-white p-5 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <label class="font-semibold text-pink-400">5. What kind of applications do you want to build in the future?</label>
+      <textarea class="w-full mt-2 p-2 border rounded" rows="2">I want to build web and mobile applications that solve real-world problems, such as productivity tools, e-commerce platforms, and community service apps like waste management systems.</textarea>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-sky-400 text-white text-center py-4">
+  <p>© 2026 Jen C. Fulgencio</p>
+</footer>
+
+<!-- JS TOGGLE FUNCTION + ACTIVE NAVBAR -->
+<script>
+  const sections = ['about','skills','projects','reflection'];
+  const buttons = document.querySelectorAll('header nav button');
+
+  function showSection(id, btn) {
+    sections.forEach(sec => {
+      document.getElementById(sec).classList.add('hidden');
+    });
+    document.getElementById(id).classList.remove('hidden');
+
+    buttons.forEach(b => b.classList.remove('active-btn'));
+    btn.classList.add('active-btn');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>
